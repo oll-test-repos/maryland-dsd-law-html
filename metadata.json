@@ -4,7 +4,7 @@
       "build-date": "2026-05-07",
       "ci-build-number": "1.0.270",
       "ci-project": "oll-tests-repos/maryland-dsd-law-xml",
-      "codified-date": "2026-07-15",
+      "codified-date": "2026-08-31",
       "platform": {
         "reproducible": "false",
         "version": "2.20.7.dev192"
@@ -16,7 +16,7 @@
           "name": "maryland-dsd/law-xml"
         },
         {
-          "commit": "8715841d6da642a5a12f9c1909d426aaab1a2f51",
+          "commit": "93c17020d55cc7c67b39f6620ff98a80b7642ac9",
           "name": "maryland-dsd/law-xml-codified"
         }
       ],
@@ -50,7 +50,7 @@
         "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
       },
       {
-        "after-date": "2027-01-11",
+        "after-date": "2027-02-27",
         "days-after-publication": "180",
         "license": "CC0-1.0",
         "rights": "<p>This version of the laws and codes on this website is dedicated to the public domain under the <a href=\"https://creativecommons.org/publicdomain/zero/1.0/\">CC0 1.0</a> license.</p>",
