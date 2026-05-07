@@ -1,0 +1,285 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8"/>
+    <title>.11 Inspection Requirements for an AST System. | Library of Maryland Regulations</title>
+    <link rel="shortcut icon" href="/us/md/exec/_document/v2/images/favicons/favicon.ico"/>
+    <!--Meta-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta itemprop="full-html" content="/us/md/exec/comar/26.10.18/index.full.html" data-document="href"/>
+    <meta itemprop="toc-json" content="/us/md/exec/comar/26.10.18/index.json" data-document="href"/>
+    <meta itemprop="parent-doc-url" content="/us/md/exec/comar" data-document="href"/>
+    <meta itemprop="order" content="|26|10|18|.11|"/>
+    <meta itemprop="doc-type" content="section" data-document=""/>
+    <meta itemprop="doc-num" content=".11"/>
+    <meta itemprop="ref-doc" content="Code of Maryland Regulations" data-document=""/>
+    <meta itemprop="ref-path" content="26|10|18|.11" data-document=""/>
+    <!--OpenGraph-->
+    <meta property="og:url" content="http://regs.maryland.gov//us/md/exec/comar/26.10.18.11"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=".11 Inspection Requirements for an AST System. | Library of Maryland Regulations"/>
+    <meta property="og:image" content="http://regs.maryland.gov//us/md/exec/_document/v2/images/og/og_image.png"/>
+    <!--Progressive Web App-->
+    <link rel="manifest" href="/manifest.json"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0078EF"/>
+    <meta name="apple-mobile-web-app-title" content="Library of Maryland Regulations"/>
+    <meta name="theme-color" content="#0078EF"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <!--PWA icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/us/md/exec/_document/v2/images/favicons/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/us/md/exec/_document/v2/images/favicons/apple-touch-icon-60x60-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/us/md/exec/_document/v2/images/favicons/apple-touch-icon-76x76-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/us/md/exec/_document/v2/images/favicons/apple-touch-icon-152x152-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/us/md/exec/_document/v2/images/favicons/apple-touch-icon-180x180-precomposed.png"/>
+    <link rel="mask-icon" href="/us/md/exec/_document/v2/images/favicons/safari-pinned-tab.svg" color="#0078EF"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/us/md/exec/_document/v2/images/favicons/favicon-16x16.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/us/md/exec/_document/v2/images/favicons/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="48x48" href="/us/md/exec/_document/v2/images/favicons/favicon-48x48.png"/>
+    <!--Fonts-->
+    <link href="/us/md/exec/_document/v2/biticons/biticons.css" type="text/css" rel="stylesheet" data-document=""/>
+    <link href="/us/md/exec/_document/v2/fonts/public-sans/public-sans.css" type="text/css" rel="stylesheet" data-document=""/>
+    <link href="/us/md/exec/_document/v2/fonts/merriweather/merriweather.css" type="text/css" rel="stylesheet" data-document=""/>
+    <link href="/us/md/exec/_document/v2/fonts/roboto-mono/roboto-mono.css" type="text/css" rel="stylesheet" data-document=""/>
+    <!--Document CSS-->
+    <link href="/us/md/exec/_document/v2/styles/responsive.min.css" type="text/css" rel="stylesheet" media="screen" data-document=""/>
+    <link href="/us/md/exec/_document/v2/styles/main.min.css" type="text/css" rel="stylesheet" media="screen" data-document=""/>
+    <link href="/us/md/exec/_document/v2/styles/print.min.css" type="text/css" rel="stylesheet" media="print" data-document=""/>
+    <link href="/_reader/styles/main.min.css" type="text/css" rel="stylesheet"/>
+    <script src="/_reader/js/main.js" data-document=""> </script>
+    <!--Links to resources that need to be prefetched-->
+    <link rel="prefetch" href="/us/md/exec/comar/26.10.18/index.full.html" as="fetch"/>
+    <link rel="prefetch" href="/index.json" as="fetch"/>
+    <link rel="prefetch" href="/us/md/exec/comar/26.10.18/index.json" as="fetch"/>
+  </head>
+  <body>
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
+      <p id="message"> </p>
+    </div>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
+    <div id="grid" class="ns__document__maryland-dsd">
+      <header id="section__header" class="ns__document__maryland-dsd">
+        <div id="section__header__inner" class="ns__document__maryland-dsd">
+          <div id="area__logo" class="ns__document__maryland-dsd">
+            <a href="/" class="logo" aria-label="Logo - Return to library home page">
+              <img src="/us/md/exec/_document/v2/images/logo/logo.png" srcset="/us/md/exec/_document/v2/images/logo/logo.png 1x, /us/md/exec/_document/v2/images/logo/logo@2x.png 2x, /us/md/exec/_document/v2/images/logo/logo@3x.png 3x" alt="Library of Maryland Regulations logo"/>
+            </a>
+          </div>
+          <div id="area__main_title" class="ns__document__maryland-dsd">
+            <div class="h__library-logotype"><span class="line1">Library of</span> <span class="line2">Maryland Regulations</span></div>
+          </div>
+        </div>
+      </header>
+      <div id="section__content" class="ns__document__maryland-dsd">
+        <div id="section__content__inner" class="ns__document__maryland-dsd">
+          <section id="area__breadcrumbs" class="ns__document__maryland-dsd" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
+            <nav role="navigation" aria-label="Breadcrumb navigation">
+              <div class="h__ui">Navigation</div>
+              <ul class="ancestors">
+                <li data-search-path="library" data-search-heading="All Documents" class="no-indent">
+                  <a href="/" title="Library of Maryland Regulations">Library of Maryland Regulations</a>
+                </li>
+                <li data-search-path="library|Code of Maryland Regulations" data-search-heading="" data-search-default="true" class="li__book-open">
+                  <a href="/us/md/exec/comar" title="Code of Maryland Regulations">Code of Maryland Regulations</a>
+                </li>
+                <li data-search-path="library|Code of Maryland Regulations|26" data-search-heading="">
+                  <a href="/us/md/exec/comar/26" title="Title 26 DEPARTMENT OF THE ENVIRONMENT">Title 26 DEPARTMENT OF THE ENVIRONMENT</a>
+                </li>
+                <li data-search-path="library|Code of Maryland Regulations|26|10" data-search-heading="">
+                  <a href="/us/md/exec/comar/26.10" title="Subtitle 10 OIL POLLUTION CONTROL AND STORAGE TANK MANAGEMENT">Subtitle 10 OIL POLLUTION CONTROL AND STORAGE TANK MANAGEMENT</a>
+                </li>
+                <li data-search-path="library|Code of Maryland Regulations|26|10|18" data-search-heading="">
+                  <a href="/us/md/exec/comar/26.10.18" title="Chapter 18 Field-Erected Aboveground Storage Tanks">Chapter 18 Field-Erected Aboveground Storage Tanks</a>
+                </li>
+                <li data-search-path="library|Code of Maryland Regulations|26|10|18|.11" data-search-heading="">
+                  <span title=".11 Inspection Requirements for an AST System.">.11 Inspection Requirements for an AST System.</span>
+                </li>
+              </ul>
+            </nav>
+          </section>
+          <main id="area__content" class="ns__document__maryland-dsd">
+            <div class="h__document-title">Code of Maryland Regulations</div>
+            <article class="content" role="document" data-ref-path="26|10|18|.11">
+              <div class="tuf-authenticate">
+                <h1 class="h__toc" id="/us/md/exec/comar/26.10.18.11">.11 Inspection Requirements for an AST System.</h1>
+                <p class="text-indent-1 "><span class="level-num" id="A">A.</span> Definitions.</p>
+                <p class="text-indent-2 "><span class="level-num" id="A(1)">(1)</span> In this regulation, the following terms have the meanings stated.</p>
+                <p class="text-indent-2 "><span class="level-num" id="A(2)">(2)</span> Terms Defined.</p>
+                <p class="text-indent-3 "><span class="level-num" id="A(2)(a)">(a)</span> “Remaining corrosion allowance” or “RCA” means the difference between the measured shell thickness and the minimum required thickness of an AST, measured in millimeters.</p>
+                <p class="text-indent-3 "><span class="level-num" id="A(2)(b)">(b)</span> “N” means the shell corrosion rate of an AST, measured in millimeters per year.</p>
+                <p class="text-indent-1 "><span class="level-num" id="B">B.</span> Periodic Visual Inspections.</p>
+                <p class="text-indent-2 "><span class="level-num" id="B(1)">(1)</span> An owner, an operator, and a person in charge of an AST system with a field-erected AST shall conduct periodic visual inspections in accordance with:</p>
+                <p class="text-indent-3 "><span class="level-num" id="B(1)(a)">(a)</span> The inspection procedures under §B(2) or (3) of this regulation; and</p>
+                <p class="text-indent-3 "><span class="level-num" id="B(1)(b)">(b)</span> The recordkeeping requirements under §B(4) and (5) of this regulation.</p>
+                <p class="text-indent-2 "><span class="level-num" id="B(2)">(2)</span> An owner, an operator, and a person in charge of an AST system with a field-erected AST may meet the visual inspections requirement in <a class="internal-link " href="/us/md/exec/comar/26.10.18.11#B(1)" title="">§B(1) of this regulation</a> by, at a minimum:</p>
+                <p class="text-indent-3 "><span class="level-num" id="B(2)(a)">(a)</span> Inspecting for the following conditions monthly:</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(2)(a)(i)">(i)</span> Signs of spills, releases, or discharges from any portion of the AST system;</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(2)(a)(ii)">(ii)</span> Water in the secondary containment dike and AST or, if a double-walled AST, the primary storage tank and interstice;</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(2)(a)(iii)">(iii)</span> The condition of the secondary containment dike, including drain valves;</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(2)(a)(iv)">(iv)</span> Signs of shell distortion;</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(2)(a)(v)">(v)</span> Signs of settlement;</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(2)(a)(vi)">(vi)</span> Signs of corrosion;</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(2)(a)(vii)">(vii)</span> The condition of the AST foundation or supports;</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(2)(a)(viii)">(viii)</span> The condition of the exterior coating of the AST system;</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(2)(a)(ix)">(ix)</span> The condition of seams, rivets, and nozzle connections;</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(2)(a)(x)">(x)</span> The condition of valves, pumps, piping, and other appurtenances directly connected to the AST;</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(2)(a)(xi)">(xi)</span> The condition of the tank gauge or an equivalent monitoring device;</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(2)(a)(xii)">(xii)</span> The condition of release detection systems; and</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(2)(a)(xiii)">(xiii)</span> The condition of overfill protection equipment;</p>
+                <p class="text-indent-3 "><span class="level-num" id="B(2)(b)">(b)</span> Inspecting containment sumps associated with an underground piping system monthly by:</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(2)(b)(i)">(i)</span> Checking for evidence of a spill, release or discharge; and</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(2)(b)(ii)">(ii)</span> Removing any liquid or debris; and</p>
+                <p class="text-indent-3 "><span class="level-num" id="B(2)(c)">(c)</span> Removing any water found during the monthly inspection from the secondary containment dike and AST or, if a double-bottomed AST, the primary storage tank and interstice.</p>
+                <p class="text-indent-2 "><span class="level-num" id="B(3)">(3)</span> An owner, an operator, and a person in charge of an AST system with a field-erected AST may meet the periodic visual inspections requirement in <a class="internal-link " href="/us/md/exec/comar/26.10.18.11#B(1)" title="">§B(1) of this regulation</a> by conducting periodic AST inspections in accordance with:</p>
+                <p class="text-indent-3 "><span class="level-num" id="B(3)(a)">(a)</span> STI/SPFA SP001 “Standard for the Inspection of Aboveground Storage Tanks” if the AST does not exceed:</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(3)(a)(i)">(i)</span> 30 feet in diameter; and</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(3)(a)(ii)">(ii)</span> 40 feet in height; or</p>
+                <p class="text-indent-3 "><span class="level-num" id="B(3)(b)">(b)</span> Tank In-service Inspection Checklist in Annex C of API Standard 653 “Tank Inspection, Repair, Alteration, and Reconstruction”.</p>
+                <p class="text-indent-2 "><span class="level-num" id="B(4)">(4)</span> An owner, an operator, and a person in charge of an AST system with a field-erected AST shall maintain the following records related to periodic visual inspections:</p>
+                <p class="text-indent-3 "><span class="level-num" id="B(4)(a)">(a)</span> If the AST system was inspected in accordance with <a class="internal-link " href="/us/md/exec/comar/26.10.18.11#B(2)" title="">§B(2) of this regulation</a>, a written log or electronic record that includes:</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(4)(a)(i)">(i)</span> The date of the inspection;</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(4)(a)(ii)">(ii)</span> The name and title of the individual performing the inspection;</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(4)(a)(iii)">(iii)</span> A description of each deficiency found;</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(4)(a)(iv)">(iv)</span> The name and title of the individual notified of the deficiencies found; and</p>
+                <p class="text-indent-4 "><span class="level-num" id="B(4)(a)(v)">(v)</span> A record of how and when the deficiencies were corrected; and</p>
+                <p class="text-indent-3 "><span class="level-num" id="B(4)(b)">(b)</span> If the AST system was inspected in accordance with <a class="internal-link " href="/us/md/exec/comar/26.10.18.11#B(3)" title="">§B(3) of this regulation</a>, the completed monthly and annual inspection checklists in STI/SPFA SP001 “Standard for the Inspection of Aboveground Storage Tanks”.</p>
+                <p class="text-indent-2 "><span class="level-num" id="B(5)">(5)</span> An owner, an operator, and a person in charge of an AST system with a field-erected AST shall maintain the records required in <a class="internal-link " href="/us/md/exec/comar/26.10.18.11#B(4)" title="">§B(4) of this regulation</a> in accordance with <a class="internal-link " href="/us/md/exec/comar/26.10.18.13" title=".13 Recordkeeping.">Regulation .13 of this chapter</a>.</p>
+                <p class="text-indent-1 "><span class="level-num" id="C">C.</span> An owner, an operator, and a person in charge of an AST system with a field-erected AST shall conduct corrosion protection system inspections in accordance with <a class="internal-link " href="/us/md/exec/comar/26.10.18.10" title=".10 Normal and Emergency Venting.">Regulation .10 of this chapter</a>.</p>
+                <p class="text-indent-1 "><span class="level-num" id="D">D.</span> An owner, an operator, and a person in charge of an AST system with a field-erected AST shall:</p>
+                <p class="text-indent-2 "><span class="level-num" id="D(1)">(1)</span> Inspect and clean normal and emergency vents for the field-erected AST annually; and</p>
+                <p class="text-indent-2 "><span class="level-num" id="D(2)">(2)</span> Maintain records of the vent inspection and cleaning required in <a class="internal-link " href="/us/md/exec/comar/26.10.18.11#D(1)" title="">§D(1) of this regulation</a> in accordance with <a class="internal-link " href="/us/md/exec/comar/26.10.18.13" title=".13 Recordkeeping.">Regulation .13 of this chapter</a>.</p>
+                <p class="text-indent-1 "><span class="level-num" id="E">E.</span> Ultrasonic Thickness Inspections. An owner, an operator, and a person in charge of an AST system with a field-erected AST shall use ultrasonic thickness measurements of the external AST shell to determine shell integrity according to the following requirements:</p>
+                <p class="text-indent-2 "><span class="level-num" id="E(1)">(1)</span> If the corrosion rate is unknown for a field-erected AST, complete an initial ultrasonic thickness inspection not later than 2 years after June 13, 2022;</p>
+                <p class="text-indent-2 "><span class="level-num" id="E(2)">(2)</span> Perform ultrasonic thickness inspections at the lesser of the following intervals:</p>
+                <p class="text-indent-3 "><span class="level-num" id="E(2)(a)">(a)</span> RCA/2N years; or</p>
+                <p class="text-indent-3 "><span class="level-num" id="E(2)(b)">(b)</span> 15 years;</p>
+                <p class="text-indent-2 "><span class="level-num" id="E(3)">(3)</span> Include the following information in the inspection records for each ultrasonic thickness inspection performed on an AST:</p>
+                <p class="text-indent-3 "><span class="level-num" id="E(3)(a)">(a)</span> The date of the inspection;</p>
+                <p class="text-indent-3 "><span class="level-num" id="E(3)(b)">(b)</span> The name and title of individual performing the inspection; and</p>
+                <p class="text-indent-3 "><span class="level-num" id="E(3)(c)">(c)</span> The ultrasonic thickness measurements; and</p>
+                <p class="text-indent-2 "><span class="level-num" id="E(4)">(4)</span> Maintain the records for ultrasonic thickness inspections required under §E(3) of the regulation in accordance with <a class="internal-link " href="/us/md/exec/comar/26.10.18.13" title=".13 Recordkeeping.">Regulation .13 of this chapter</a>.</p>
+                <p class="text-indent-1 "><span class="level-num" id="F">F.</span> External Inspections. An owner, an operator, and a person in charge of an AST system with a field-erected AST shall have an external inspection performed on the field-erected AST according to the following requirements:</p>
+                <p class="text-indent-2 "><span class="level-num" id="F(1)">(1)</span> An authorized inspector conducts external inspection on the field-erected AST.</p>
+                <p class="text-indent-2 "><span class="level-num" id="F(2)">(2)</span> Perform external inspections at the lesser of the following intervals:</p>
+                <p class="text-indent-3 "><span class="level-num" id="F(2)(a)">(a)</span> RCA/4N years; or</p>
+                <p class="text-indent-3 "><span class="level-num" id="F(2)(b)">(b)</span> 5 years;</p>
+                <p class="text-indent-2 "><span class="level-num" id="F(3)">(3)</span> Inspect the following components of a field-erected AST during an external inspection:</p>
+                <p class="text-indent-3 "><span class="level-num" id="F(3)(a)">(a)</span> The AST foundation;</p>
+                <p class="text-indent-3 "><span class="level-num" id="F(3)(b)">(b)</span> The shell and roof of the AST, including shell and roof appurtenances;</p>
+                <p class="text-indent-3 "><span class="level-num" id="F(3)(c)">(c)</span> The AST accessways;</p>
+                <p class="text-indent-3 "><span class="level-num" id="F(3)(d)">(d)</span> The AST grounding system;</p>
+                <p class="text-indent-3 "><span class="level-num" id="F(3)(e)">(e)</span> The wall and roof of an AST having an insulated covering;</p>
+                <p class="text-indent-3 "><span class="level-num" id="F(3)(f)">(f)</span> Connected aboveground piping; and</p>
+                <p class="text-indent-3 "><span class="level-num" id="F(3)(g)">(g)</span> The secondary containment dike;</p>
+                <p class="text-indent-2 "><span class="level-num" id="F(4)">(4)</span> At a minimum, the authorized inspector conducting an external inspection of the field-erected AST shall complete the Tank In-service Inspection Checklist in Annex C of API Standard 653 “Tank Inspection, Repair, Alteration, and Reconstruction”;</p>
+                <p class="text-indent-2 "><span class="level-num" id="F(5)">(5)</span> Submit a copy of the final external inspection report to the Department within 60 days of completing the external inspection; and</p>
+                <p class="text-indent-2 "><span class="level-num" id="F(6)">(6)</span> Maintain records of completed external inspections in accordance with <a class="internal-link " href="/us/md/exec/comar/26.10.18.13" title=".13 Recordkeeping.">Regulation .13 of this chapter</a>.</p>
+                <p class="text-indent-1 "><span class="level-num" id="G">G.</span> Risk-based Inspection Program.</p>
+                <p class="text-indent-2 "><span class="level-num" id="G(1)">(1)</span> An owner, an operator, and a person in charge of an AST system with a field-erected AST may implement a risk-based inspection program to develop an inspection plan for conducting internal inspections on the field-constructed AST.</p>
+                <p class="text-indent-2 "><span class="level-num" id="G(2)">(2)</span> If implementing a risk-based inspection program, an owner, an operator, and a person in charge of an AST system with a field-erected AST shall:</p>
+                <p class="text-indent-3 "><span class="level-num" id="G(2)(a)">(a)</span> Establish and implement the risk-based inspection program in accordance with API Recommended Practice 580 “Risk-based Inspection”;</p>
+                <p class="text-indent-3 "><span class="level-num" id="G(2)(b)">(b)</span> Prior to implementation, have the risk-based inspection program, including the risk-based inspection assessment and inspection plan, reviewed and approved by an authorized inspector and a storage tank engineer.</p>
+                <p class="text-indent-2 "><span class="level-num" id="G(3)">(3)</span> An owner, an operator, and a person in charge of an AST system with a field-erected AST shall maintain records related to the risk-based inspection program, including copies of the risk-based inspection assessment, inspection plan, and authorized inspector and storage tank engineer approvals, in accordance with the recordkeeping requirements in <a class="internal-link " href="/us/md/exec/comar/26.10.18.13" title=".13 Recordkeeping.">Regulation .13 of this chapter</a>.</p>
+                <p class="text-indent-1 "><span class="level-num" id="H">H.</span> Internal Inspections. An owner, an operator, and a person in charge of an AST system with a field-erected AST shall have an internal inspection of a field-erected AST performed on the field-erected AST according to the following requirements:</p>
+                <p class="text-indent-2 "><span class="level-num" id="H(1)">(1)</span> An authorized inspector shall complete an internal inspection of a field-erected AST;</p>
+                <p class="text-indent-2 "><span class="level-num" id="H(2)">(2)</span> Complete an initial internal inspection on a new field-erected AST not later than:</p>
+                <p class="text-indent-3 "><span class="level-num" id="H(2)(a)">(a)</span> 10 years from the date the AST first contained oil; or</p>
+                <p class="text-indent-3 "><span class="level-num" id="H(2)(b)">(b)</span> A maximum inspection interval established in accordance with API Standard 653 “Tank Inspection, Repair, Alteration, and Reconstruction” if the following conditions are met:</p>
+                <p class="text-indent-4 "><span class="level-num" id="H(2)(b)(i)">(i)</span> The maximum interval is determined under a risk-based inspection program; and</p>
+                <p class="text-indent-4 "><span class="level-num" id="H(2)(b)(ii)">(ii)</span> The AST has one or more of the leak prevention, detection, corrosion mitigation, or containment safeguards listed in Table 6.1–Tank Safeguard in API Standard 653 “Tank Inspection, Repair, Alteration, and Reconstruction”;</p>
+                <p class="text-indent-2 "><span class="level-num" id="H(3)">(3)</span> Complete an initial internal inspection on an existing field-erected AST that contains oil not later than 2 years after June 13, 2022;</p>
+                <p class="text-indent-2 "><span class="level-num" id="H(4)">(4)</span> Complete subsequent internal inspections on a new or existing field-erected AST not later than:</p>
+                <p class="text-indent-3 "><span class="level-num" id="H(4)(a)">(a)</span> 20 years after the date the initial internal inspection required in §H(2) or (3) of this regulation was completed; or</p>
+                <p class="text-indent-3 "><span class="level-num" id="H(4)(b)">(b)</span> A maximum inspection interval determined in accordance with the corrosion rate procedures and the additional risk-based inspection requirements in API Standard 653 “Tank Inspection, Repair, Alteration, and Reconstruction”;</p>
+                <p class="text-indent-2 "><span class="level-num" id="H(5)">(5)</span> An internal inspection of a field-erected AST includes:</p>
+                <p class="text-indent-3 "><span class="level-num" id="H(5)(a)">(a)</span> An evaluation of, at a minimum, 75 percent of the storage tank bottom plates using magnetic flux leakage scanning;</p>
+                <p class="text-indent-3 "><span class="level-num" id="H(5)(b)">(b)</span> An evaluation of 100 percent of floor plate welds and shell-to-floor welds using one or more of the following testing methods:</p>
+                <p class="text-indent-4 "><span class="level-num" id="H(5)(b)(i)">(i)</span> Vacuum box;</p>
+                <p class="text-indent-4 "><span class="level-num" id="H(5)(b)(ii)">(ii)</span> Magnetic particle; and</p>
+                <p class="text-indent-4 "><span class="level-num" id="H(5)(b)(iii)">(iii)</span> Liquid penetrant;</p>
+                <p class="text-indent-3 "><span class="level-num" id="H(5)(c)">(c)</span> Verification of a storage tank bottom’s integrity to ensure the storage tank bottom is not severely corroded or there is evidence of a spill, release, or discharge;</p>
+                <p class="text-indent-3 "><span class="level-num" id="H(5)(d)">(d)</span> The collection of data necessary to assess the minimum storage tank bottom and shell thickness, including evaluating data from previous inspections;</p>
+                <p class="text-indent-3 "><span class="level-num" id="H(5)(e)">(e)</span> Identification and evaluation of any storage tank bottom settlement; and</p>
+                <p class="text-indent-3 "><span class="level-num" id="H(5)(f)">(f)</span> Assessment of all external and internal aspects of an AST while the storage tank is out-of-service, including an examination and test of the following AST components:</p>
+                <p class="text-indent-4 "><span class="level-num" id="H(5)(f)(i)">(i)</span> Storage tank exterior and interior;</p>
+                <p class="text-indent-4 "><span class="level-num" id="H(5)(f)(ii)">(ii)</span> Storage tank bottom, including the liquid side and soil side;</p>
+                <p class="text-indent-4 "><span class="level-num" id="H(5)(f)(iii)">(iii)</span> Shell seams, plates, and overflows;</p>
+                <p class="text-indent-4 "><span class="level-num" id="H(5)(f)(iv)">(iv)</span> The fixed roof interior, including the surface, support structure, and appurtenances;</p>
+                <p class="text-indent-4 "><span class="level-num" id="H(5)(f)(v)">(v)</span> A floating roof, including the deck, pontoons, cutouts and supports, seal assemblies, and appurtenances;</p>
+                <p class="text-indent-4 "><span class="level-num" id="H(5)(f)(vi)">(vi)</span> Common AST appurtenances; and</p>
+                <p class="text-indent-4 "><span class="level-num" id="H(5)(f)(vii)">(vii)</span> Access structures;</p>
+                <p class="text-indent-2 "><span class="level-num" id="H(6)">(6)</span> At a minimum, an authorized inspector conducting an internal inspection of an AST shall complete the Tank Out-of-service Inspection Checklist in Annex C of API Standard 653 “Tank Inspection, Repair, Alteration, and Reconstruction” in addition to other forms used;</p>
+                <p class="text-indent-2 "><span class="level-num" id="H(7)">(7)</span> Submit a copy of the final internal inspection report to the Department within 60 days of completing the internal inspection; and</p>
+                <p class="text-indent-2 "><span class="level-num" id="H(8)">(8)</span> Maintain records of each internal inspection conducted for on a field-erected AST in accordance with <a class="internal-link " href="/us/md/exec/comar/26.10.18.13" title=".13 Recordkeeping.">Regulation .13 of this chapter</a>.</p>
+                <aside class="annotations" role="note">
+                  <h2>Cross References</h2>
+                  <p>
+                    <a class="internal-link" href="/us/md/exec/comar/26.10.18.02#B(7)" title="">26.10.18.02B(7)</a>
+                  </p>
+                  <p>
+                    <a class="internal-link" href="/us/md/exec/comar/26.10.18.02#B(9)" title="">26.10.18.02B(9)</a>
+                  </p>
+                  <p>
+                    <a class="internal-link" href="/us/md/exec/comar/26.10.18.02#B(11)" title="">26.10.18.02B(11)</a>
+                  </p>
+                  <p>
+                    <a class="internal-link" href="/us/md/exec/comar/26.10.18.07#A(3)(a)" title="">26.10.18.07A(3)(a)</a>
+                  </p>
+                  <p>
+                    <a class="internal-link" href="/us/md/exec/comar/26.10.18.08#A(1)" title="">26.10.18.08A(1)</a>
+                  </p>
+                  <p>
+                    <a class="internal-link" href="/us/md/exec/comar/26.10.18.12#B(2)" title="">26.10.18.12B(2)</a>
+                  </p>
+                  <p>
+                    <a class="internal-link" href="/us/md/exec/comar/26.10.18.13#C(1)" title="">26.10.18.13C(1)</a>
+                  </p>
+                  <p>
+                    <a class="internal-link" href="/us/md/exec/comar/26.10.18.13#C(2)" title="">26.10.18.13C(2)</a>
+                  </p>
+                </aside>
+              </div>
+            </article>
+          </main>
+          <nav id="area__navigation_mini" class="ns__document__maryland-dsd" aria-label="Previous and next article links">
+            <section>
+              <a href="/us/md/exec/comar/26.10.18.10" aria-label=".10 Normal and Emergency Venting.">
+                <div class="h__ui">Previous</div>
+                <span>.10 Normal and Emergency Venting.</span>
+              </a>
+            </section>
+            <section>
+              <a href="/us/md/exec/comar/26.10.18.12" aria-label=".12 Out-of-Service and Permanent Closure.">
+                <div class="h__ui">Next</div>
+                <span>.12 Out-of-Service and Permanent Closure.</span>
+              </a>
+            </section>
+          </nav>
+        </div>
+      </div>
+      <footer id="section__footer" class="ns__document__maryland-dsd">
+        <div id="section__footer__inner" class="ns__document__maryland-dsd">
+          <div id="area__footer__content" class="ns__document__maryland-dsd">
+<p>This version of the laws and codes on this website is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license with copyright held by the State of Maryland.</p><p>This version of the laws and codes on this website will be dedicated to the public domain under the <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> license 180 days after publication.</p>
+<p>
+      Please do not scrape. Instead, bulk download the CC BY-NC-SA-4.0 <a href="https://github.com/maryland-dsd/law-html">HTML</a> or <a href="https://github.com/maryland-dsd/law-xml">XML</a> or CC0 <a href="https://github.com/maryland-dsd/law-html-cc0">HTML</a> or <a href="https://github.com/maryland-dsd/law-xml-cc0">XML</a>.
+    </p><p>Powered by the non-profit <a href="https://www.openlawlib.org/">Open Law Library</a>.</p></div>
+        </div>
+      </footer>
+    </div>
+    <!--Piwik analytics-->
+    <noscript>
+      <img src="/_analytics/pixel.png" style="border:0;" alt=""/>
+    </noscript>
+  </body>
+</html>

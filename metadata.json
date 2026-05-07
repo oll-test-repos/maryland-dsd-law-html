@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "build": {
+      "build-date": "2026-05-07",
+      "ci-build-number": "1.0.270",
+      "ci-project": "oll-tests-repos/maryland-dsd-law-xml",
+      "codified-date": "2025-08-22",
+      "platform": {
+        "reproducible": "false",
+        "version": "2.20.7.dev192"
+      },
+      "publication": "publication/2026-05-07",
+      "repositories": [
+        {
+          "commit": "4cd9ac3c533720b33f29341bf1e54c0ea2e4c8fd",
+          "name": "maryland-dsd/law-xml"
+        },
+        {
+          "commit": "3d7e984c6bd6aca25bd181df9c04d64c3bf8c0cb",
+          "name": "maryland-dsd/law-xml-codified"
+        }
+      ],
+      "search": {
+        "version": "v2"
+      }
+    },
+    "canonical-urls": {
+      "html": "http://regs.maryland.gov/",
+      "html-bulk": "https://github.com/maryland-dsd/law-html",
+      "html-cc0-bulk": "https://github.com/maryland-dsd/law-html-cc0",
+      "law-git": "https://github.com/maryland-dsd/law.git",
+      "static-assets": "https://github.com/maryland-dsd/law-static-assets",
+      "xml-bulk": "https://github.com/maryland-dsd/law-xml",
+      "xml-cc0-bulk": "https://github.com/maryland-dsd/law-xml-cc0"
+    },
+    "contact": {
+      "email": "help@openlawlib.org"
+    },
+    "description": "",
+    "history-start": "2025-08-18",
+    "licenses": [
+      [
+        {
+          "rights": "<p>This version of the laws and codes on this website is licensed under the <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\">CC BY-NC-SA 4.0</a> license with copyright held by the State of Maryland.</p><p>This version of the laws and codes on this website will be dedicated to the public domain under the <a href=\"https://creativecommons.org/publicdomain/zero/1.0/\">CC0 1.0</a> license 180 days after publication.</p>"
+        }
+      ],
+      {
+        "license": "CC-BY-NC-SA-4.0",
+        "rights": "<p>Copyright State of Maryland</p><p>This version of the laws and codes on this website is licensed under the <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\">CC BY-NC-SA 4.0</a> license.</p><p>This version of the laws and codes on this website will be dedicated to the public domain 180 days after publication here.</p>",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      {
+        "after-date": "2026-11-03",
+        "days-after-publication": "180",
+        "license": "CC0-1.0",
+        "rights": "<p>This version of the laws and codes on this website is dedicated to the public domain under the <a href=\"https://creativecommons.org/publicdomain/zero/1.0/\">CC0 1.0</a> license.</p>",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ]
+  }
+}

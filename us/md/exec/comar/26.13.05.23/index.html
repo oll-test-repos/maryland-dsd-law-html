@@ -1,0 +1,321 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8"/>
+    <title>.23 Cochran's Approximation to the Behrens-Fisher Student's t-test. | Library of Maryland Regulations</title>
+    <link rel="shortcut icon" href="/us/md/exec/_document/v2/images/favicons/favicon.ico"/>
+    <!--Meta-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta itemprop="full-html" content="/us/md/exec/comar/26.13.05/index.full.html" data-document="href"/>
+    <meta itemprop="toc-json" content="/us/md/exec/comar/26.13.05/index.json" data-document="href"/>
+    <meta itemprop="parent-doc-url" content="/us/md/exec/comar" data-document="href"/>
+    <meta itemprop="order" content="|26|13|05|.23|"/>
+    <meta itemprop="doc-type" content="section" data-document=""/>
+    <meta itemprop="doc-num" content=".23"/>
+    <meta itemprop="ref-doc" content="Code of Maryland Regulations" data-document=""/>
+    <meta itemprop="ref-path" content="26|13|05|.23" data-document=""/>
+    <!--OpenGraph-->
+    <meta property="og:url" content="http://regs.maryland.gov//us/md/exec/comar/26.13.05.23"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=".23 Cochran's Approximation to the Behrens-Fisher Student's t-test. | Library of Maryland Regulations"/>
+    <meta property="og:image" content="http://regs.maryland.gov//us/md/exec/_document/v2/images/og/og_image.png"/>
+    <!--Progressive Web App-->
+    <link rel="manifest" href="/manifest.json"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0078EF"/>
+    <meta name="apple-mobile-web-app-title" content="Library of Maryland Regulations"/>
+    <meta name="theme-color" content="#0078EF"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <!--PWA icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/us/md/exec/_document/v2/images/favicons/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/us/md/exec/_document/v2/images/favicons/apple-touch-icon-60x60-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/us/md/exec/_document/v2/images/favicons/apple-touch-icon-76x76-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/us/md/exec/_document/v2/images/favicons/apple-touch-icon-152x152-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/us/md/exec/_document/v2/images/favicons/apple-touch-icon-180x180-precomposed.png"/>
+    <link rel="mask-icon" href="/us/md/exec/_document/v2/images/favicons/safari-pinned-tab.svg" color="#0078EF"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/us/md/exec/_document/v2/images/favicons/favicon-16x16.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/us/md/exec/_document/v2/images/favicons/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="48x48" href="/us/md/exec/_document/v2/images/favicons/favicon-48x48.png"/>
+    <!--Fonts-->
+    <link href="/us/md/exec/_document/v2/biticons/biticons.css" type="text/css" rel="stylesheet" data-document=""/>
+    <link href="/us/md/exec/_document/v2/fonts/public-sans/public-sans.css" type="text/css" rel="stylesheet" data-document=""/>
+    <link href="/us/md/exec/_document/v2/fonts/merriweather/merriweather.css" type="text/css" rel="stylesheet" data-document=""/>
+    <link href="/us/md/exec/_document/v2/fonts/roboto-mono/roboto-mono.css" type="text/css" rel="stylesheet" data-document=""/>
+    <!--Document CSS-->
+    <link href="/us/md/exec/_document/v2/styles/responsive.min.css" type="text/css" rel="stylesheet" media="screen" data-document=""/>
+    <link href="/us/md/exec/_document/v2/styles/main.min.css" type="text/css" rel="stylesheet" media="screen" data-document=""/>
+    <link href="/us/md/exec/_document/v2/styles/print.min.css" type="text/css" rel="stylesheet" media="print" data-document=""/>
+    <link href="/_reader/styles/main.min.css" type="text/css" rel="stylesheet"/>
+    <script src="/_reader/js/main.js" data-document=""> </script>
+    <!--Links to resources that need to be prefetched-->
+    <link rel="prefetch" href="/us/md/exec/comar/26.13.05/index.full.html" as="fetch"/>
+    <link rel="prefetch" href="/index.json" as="fetch"/>
+    <link rel="prefetch" href="/us/md/exec/comar/26.13.05/index.json" as="fetch"/>
+  </head>
+  <body>
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
+      <p id="message"> </p>
+    </div>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
+    <div id="grid" class="ns__document__maryland-dsd">
+      <header id="section__header" class="ns__document__maryland-dsd">
+        <div id="section__header__inner" class="ns__document__maryland-dsd">
+          <div id="area__logo" class="ns__document__maryland-dsd">
+            <a href="/" class="logo" aria-label="Logo - Return to library home page">
+              <img src="/us/md/exec/_document/v2/images/logo/logo.png" srcset="/us/md/exec/_document/v2/images/logo/logo.png 1x, /us/md/exec/_document/v2/images/logo/logo@2x.png 2x, /us/md/exec/_document/v2/images/logo/logo@3x.png 3x" alt="Library of Maryland Regulations logo"/>
+            </a>
+          </div>
+          <div id="area__main_title" class="ns__document__maryland-dsd">
+            <div class="h__library-logotype"><span class="line1">Library of</span> <span class="line2">Maryland Regulations</span></div>
+          </div>
+        </div>
+      </header>
+      <div id="section__content" class="ns__document__maryland-dsd">
+        <div id="section__content__inner" class="ns__document__maryland-dsd">
+          <section id="area__breadcrumbs" class="ns__document__maryland-dsd" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
+            <nav role="navigation" aria-label="Breadcrumb navigation">
+              <div class="h__ui">Navigation</div>
+              <ul class="ancestors">
+                <li data-search-path="library" data-search-heading="All Documents" class="no-indent">
+                  <a href="/" title="Library of Maryland Regulations">Library of Maryland Regulations</a>
+                </li>
+                <li data-search-path="library|Code of Maryland Regulations" data-search-heading="" data-search-default="true" class="li__book-open">
+                  <a href="/us/md/exec/comar" title="Code of Maryland Regulations">Code of Maryland Regulations</a>
+                </li>
+                <li data-search-path="library|Code of Maryland Regulations|26" data-search-heading="">
+                  <a href="/us/md/exec/comar/26" title="Title 26 DEPARTMENT OF THE ENVIRONMENT">Title 26 DEPARTMENT OF THE ENVIRONMENT</a>
+                </li>
+                <li data-search-path="library|Code of Maryland Regulations|26|13" data-search-heading="">
+                  <a href="/us/md/exec/comar/26.13" title="Subtitle 13 DISPOSAL OF CONTROLLED HAZARDOUS SUBSTANCES">Subtitle 13 DISPOSAL OF CONTROLLED HAZARDOUS SUBSTANCES</a>
+                </li>
+                <li data-search-path="library|Code of Maryland Regulations|26|13|05" data-search-heading="">
+                  <a href="/us/md/exec/comar/26.13.05" title="Chapter 05 Standards for Owners and Operators of Hazardous Waste Treatment, Storage, and Disposal Facilities">Chapter 05 Standards for Owners and Operators of Hazardous Waste Treatment, Storage, and Disposal Facilities</a>
+                </li>
+                <li data-search-path="library|Code of Maryland Regulations|26|13|05|.23" data-search-heading="">
+                  <span title=".23 Cochran's Approximation to the Behrens-Fisher Student's t-test.">.23 Cochran's Approximation to the Behrens-Fisher Student's t-test.</span>
+                </li>
+              </ul>
+            </nav>
+          </section>
+          <main id="area__content" class="ns__document__maryland-dsd">
+            <div class="h__document-title">Code of Maryland Regulations</div>
+            <article class="content" role="document" data-ref-path="26|13|05|.23">
+              <div class="tuf-authenticate">
+                <h1 class="h__toc" id="/us/md/exec/comar/26.13.05.23">.23 Cochran's Approximation to the Behrens-Fisher Student's t-test.</h1>
+                <p class="text-indent-1 "><span class="level-num" id="A">A.</span> Using all the available background data (n<sub>b</sub> readings), calculate the background mean (x<sub>b</sub>) and background variance S<sub>b</sub><sup>2</sup>.  For the single monitoring well under investigation (n<sub>m</sub> reading), calculate the monitoring mean (x<sub>m</sub>) and monitoring variance S<sub>m</sub><sup>2</sup>.  For any set of data (x<sub>1</sub>, x<sub>2</sub> ...x<sub>n</sub>), the mean is calculated by:</p>
+                <p class="img_wrap ">
+                  <img alt="Cochran's Approximation to the Behrens-Fisher Student's t-test formula to calculate mean." src="data:image/png;base64,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"/>
+                </p>
+                <p>and the variance is calculated by:</p>
+                <p class="img_wrap ">
+                  <img alt="Cochran's Approximation to the Behrens-Fisher Student's t-test formula to calculate variance." src="data:image/png;base64,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"/>
+                </p>
+                <p>where “n” denotes the number of observations in the set of data.</p>
+                <p class="text-indent-1 "><span class="level-num" id="B">B.</span> The t-test uses these data summary measures to calculate a t-static (t*) and a comparison t-statistic (t<sub>c</sub>).  The t* value is compared to the t<sub>c</sub> value and a conclusion reached as to whether there has been a statistically significant change in any indicator parameter.</p>
+                <p class="text-indent-1 "><span class="level-num" id="C">C.</span> The t-statistic for all parameters except pH and similar monitoring parameters is:</p>
+                <p class="img_wrap ">
+                  <img alt="Cochran's Approximation to the Behrens-Fisher Student's t-test formula for calculating the t-statistic." src="data:image/png;base64,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"/>
+                </p>
+                <p class="text-indent-1 "><span class="level-num" id="D">D.</span> If the value of this t-statistic is negative then there is no significant difference between the monitoring data and background data. It should be noted that significantly small negative values may be indicative of a failure of the assumption made for test validity or errors have been made in collecting the background data.</p>
+                <p class="text-indent-1 "><span class="level-num" id="E">E.</span> The t-statistic (t<sub>c</sub>) against which t* will be compared, necessitates finding t<sub>B</sub> and t<sub>m</sub> from standard (one-tailed) tables where, t<sub>B</sub>= t-tables with (t<sub>B</sub><sup>-1</sup>) degrees of freedom, at the 0.05 level of significance.</p>
+                <p class="text-indent-1 "><span class="level-num" id="F">F.</span> t<sub>m</sub> = t-tables with (n<sub>m</sub><sup>-1</sup>)degrees of freedom, at the 0.05 level of significance.</p>
+                <p class="text-indent-1 "><span class="level-num" id="G">G.</span> Finally, the special weighting W<sub>B</sub> and W<sub>M</sub> are defined as:</p>
+                <p class="img_wrap ">
+                  <img alt="Cochran's Approximation to the Behrens-Fisher Student's t-test formula for calculating the special weighting WB and WM." src="data:image/png;base64,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"/>
+                </p>
+                <p>and so the comparison t-statistic is:</p>
+                <p class="img_wrap ">
+                  <img alt="Calculation for the comparison t-statistic." src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAkwAAAC4AQAAAAA5g45IAAAAAmJLR0QAAKqNIzIAAAAMY21QUEpDbXAwNzEyAAAAB09tt6UAAAUcSURBVGje7dlNbtw2FADgpzCIAjQwe4DCzBG6qxeG5aO4N8jSi8DiwAsvc4QepTSy8DHK1IsuS6OLEihB9vFHMxoNZ6SxZyQX1Vskwkj6LFEU+fgEbq/4c/suBZNRO2KmZmqmZmqmZmqm/m+UPGemdnX+DCBPeNovAykOJwAXUHZ+fvL/aAAJREA9AfUhR6k2VQ2lTgFuEvXrOmXWrupuREqCE8RJ6rft6k5U2ARq0SncMMoQp0g609IOxQNFpqJkvYVyvHb0hVRsSE/ZoZQFT32L7AZV4g0mypavhVJIMcvizkFU4RZhW3ebvU2JMSl8RKJwt2HzY5bSkYL2K99HWQDWaStigOo6UWRcCmoyhOq9QcFuoaZLyvhxgON5X5x/FcyPREVKF73NfmCqwhEAKL5y+B+Em4FwPwY8FY/r76JO0ERBrakB4kfyhrKgzoiYgpL0jl9QBxVUGsVSsUSx/amTkp8wJyuJlFOhc3NPVZ66uib301A0UopGKpwiq7CTX30u9qDeUPkeqXqdijv5z6a4G0xpoBKnlQ6VOhMvXiOFg0boX1TWSPEzCrupyu/oNHtDEU8J/zxNqTm8S/nD0SnTUL5fPaoyjlktCn2kqCnlJTQj2m4qvINfFcTELFE4r+FkrwsOJVKfCJyNRtVmJ1U5TcSpp3TJ06ybp/5BqmhT7bZS1FOWiAukhGaLsSjMDwP1k8DOQBTRpEVh98AX21JPAQygbJH6lR/4bJeqG4ock/q7Qy1C6iR9d96kWKIsZg/lBnXfoW4jhe+rAdZQT6mnMJ96WYaUE1Uv9ejcl0hZ7K2JaqJ2fzWUv8bxqBhhQMJjOlSI0OxhJx9EVf2UYHA0arGFUv4o8XZjaYhtRPgPKcH5WPZStplDW+naMvwoCpGC4jjUKuUyAG2qSOLm31EF/+D33j9waN+gjOmpDtlK3aLCz3yz0X1bbeCHpkSW2jNeQhk8smzl4oemfo8PwVPfZxrGwCoI/85+LlLm1kSLskXTzukp7BlHpZrgL6dwwRh6+0DgTUh0Ac7rTap5gt2rwjQ9LEtxToSzUxp3b+mix6NW8ej+cM4yNyR6qH3iWFR+ZNqfks+9miNS5gaz3gNR1zkKp0d9UXV+1Dg6ABXFCJS+LjNUKtsuO7ZaUXw79anKUMJT5ysqrAgx1ZM7r+pwlLzcSrWKyXGdiiklULWNAnnpc7NNqkbHlwbaFK8sOLttZIBCuExgAoDrN7V8hmpJ1a0i57EonMuzlN1Bsf2posnXx6cEy1O48iqc6FC+pFXraguFmHvIWB1KJsqMRanqLkdV/uPCigrnxyLrDoqVGQqXllCtkvpUrw3lzFEonR2QZY4yPZTNfC/ylIRq4XiXek/UKJQT9RaKLVKtOKQdzFPqjCi3ncqGKr8JdufisiKkAb5yNT11H6hSVGv12uvM+NZLfRXvKL7ty3ptoORNcf9MKtbVmmZ3/GpayhREBSp+R0qd6ZlUqd5uUoXNrKZHpPxMXC0p01C+nKk6OU4P5UtBgdJtKtZrBfa2eiKKacy+FYt5Q2qrWGQVAGujST/lP8Kqppy5pHik6CSU4znKlzNpqMr019vXqMLlqVAZnYiqArX+BFUqsqq9KBzyAqXbL45iU1POf9lfFlkjFYus+pmU61DqWdTDijLxR1P7yq1mk1F4ym8rai32pdJRucro66QE5ef9H4u7AZCZFgSs1xKmoKqDUbT/oNGpQTFTMzVTMzVTM/Xfo/4FyFAkrVz5HD0AAAAASUVORK5CYII="/>
+                </p>
+                <p class="text-indent-1 "><span class="level-num" id="H">H.</span> The t-statistic (t*) is now compared with the comparison t-statistic (t<sub>c</sub>) using the following decision-rule:</p>
+                <p class="text-indent-2 "><span class="level-num" id="H(1)">(1)</span> If t* is equal to or larger than t<sub>c</sub>, then conclude that there most likely has been a significant increase in this specific parameter;</p>
+                <p class="text-indent-2 "><span class="level-num" id="H(2)">(2)</span> If t* is less than t<sub>c</sub>, then conclude that most likely there has not been a change in this specific parameter.</p>
+                <p class="text-indent-1 "><span class="level-num" id="I">I.</span> The t-statistic for testing pH and similar monitoring parameters is constructed in the same manner as previously described except the negative sign (if any) is discarded and the caveat concerning the negative value is ignored.  The standard (two-tailed) tables are used in the construction t<sub>c</sub> for pH and similar monitoring parameters.</p>
+                <p class="text-indent-1 "><span class="level-num" id="J">J.</span> If t* is equal or larger than t<sub>c</sub>, then conclude that there most likely has been a significant increase (if the initial t* had been negative, this would imply a significant decrease). If t* is less than t<sub>c</sub>, then conclude that there most likely has been no change.</p>
+                <p class="text-indent-1 "><span class="level-num" id="K">K.</span> A further discussion of the test may be found in Statistical Methods (6th Edition, Section 4.14) by G.W. Snedecor and W.G. Cochran, or Principles and Procedures of Statistics (1st Edition, Section 5.8) by R.G.D. Steel and J.H. Torrie.</p>
+                <div class="table_wrap">
+                  <table class="no-border-heading">
+                    <thead>
+                      <tr>
+                        <th colspan="3">Standard t-Tables <br/>0.05 Level of Significance</th>
+                      </tr>
+                      <tr>
+                        <th>Degrees of<br/>Freedom</th>
+                        <th>t-values<br/>(one-tail)</th>
+                        <th>t-values<br/>(two-tail)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">1</td>
+                        <td>6.314</td>
+                        <td>12.708</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">2</td>
+                        <td>2.920</td>
+                        <td>4.303</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">3</td>
+                        <td>2.353</td>
+                        <td>3.182</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">4</td>
+                        <td>2.132</td>
+                        <td>2.776</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">5</td>
+                        <td>2.015</td>
+                        <td>2.571</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">6</td>
+                        <td>1.943</td>
+                        <td>2.447</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">7</td>
+                        <td>1.895</td>
+                        <td>2.365</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">8</td>
+                        <td>1.860</td>
+                        <td>2.306</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">9</td>
+                        <td>1.833</td>
+                        <td>2.262</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">10</td>
+                        <td>1.812</td>
+                        <td>2.228</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">11</td>
+                        <td>1.796</td>
+                        <td>2.201</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">12</td>
+                        <td>1.782</td>
+                        <td>2.179</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">13</td>
+                        <td>1.771</td>
+                        <td>2.160</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">14</td>
+                        <td>1.761</td>
+                        <td>2.145</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">15</td>
+                        <td>1.753</td>
+                        <td>2.131</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">16</td>
+                        <td>1.746</td>
+                        <td>2.120</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">17</td>
+                        <td>1.740</td>
+                        <td>2.110</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">18</td>
+                        <td>1.734</td>
+                        <td>2.101</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">19</td>
+                        <td>1.729</td>
+                        <td>2.093</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">20</td>
+                        <td>1.725</td>
+                        <td>2.086</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">23</td>
+                        <td>1.714</td>
+                        <td>2.069</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">24</td>
+                        <td>1.711</td>
+                        <td>2.064</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">25</td>
+                        <td>1.708</td>
+                        <td>2.060</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">30</td>
+                        <td>1.697</td>
+                        <td>2.042</td>
+                      </tr>
+                      <tr>
+                        <td data-text-align="center" data-vertical-align="middle">40</td>
+                        <td>1.684</td>
+                        <td>2.021</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </article>
+          </main>
+          <nav id="area__navigation_mini" class="ns__document__maryland-dsd" aria-label="Previous and next article links">
+            <section>
+              <a href="/us/md/exec/comar/26.13.05.22" aria-label=".22 EPA Interim Primary Drinking Water Standards.">
+                <div class="h__ui">Previous</div>
+                <span>.22 EPA Interim Primary Drinking Water Standards.</span>
+              </a>
+            </section>
+            <section>
+              <a href="/us/md/exec/comar/26.13.05.24" aria-label=".24 Examples of Potentially Incompatible Waste.">
+                <div class="h__ui">Next</div>
+                <span>.24 Examples of Potentially Incompatible Waste.</span>
+              </a>
+            </section>
+          </nav>
+        </div>
+      </div>
+      <footer id="section__footer" class="ns__document__maryland-dsd">
+        <div id="section__footer__inner" class="ns__document__maryland-dsd">
+          <div id="area__footer__content" class="ns__document__maryland-dsd">
+<p>This version of the laws and codes on this website is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license with copyright held by the State of Maryland.</p><p>This version of the laws and codes on this website will be dedicated to the public domain under the <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> license 180 days after publication.</p>
+<p>
+      Please do not scrape. Instead, bulk download the CC BY-NC-SA-4.0 <a href="https://github.com/maryland-dsd/law-html">HTML</a> or <a href="https://github.com/maryland-dsd/law-xml">XML</a> or CC0 <a href="https://github.com/maryland-dsd/law-html-cc0">HTML</a> or <a href="https://github.com/maryland-dsd/law-xml-cc0">XML</a>.
+    </p><p>Powered by the non-profit <a href="https://www.openlawlib.org/">Open Law Library</a>.</p></div>
+        </div>
+      </footer>
+    </div>
+    <!--Piwik analytics-->
+    <noscript>
+      <img src="/_analytics/pixel.png" style="border:0;" alt=""/>
+    </noscript>
+  </body>
+</html>
