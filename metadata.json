@@ -4,7 +4,7 @@
       "build-date": "2026-05-07",
       "ci-build-number": "1.0.270",
       "ci-project": "oll-tests-repos/maryland-dsd-law-xml",
-      "codified-date": "2025-10-01",
+      "codified-date": "2025-10-03",
       "platform": {
         "reproducible": "false",
         "version": "2.20.7.dev192"
@@ -16,7 +16,7 @@
           "name": "maryland-dsd/law-xml"
         },
         {
-          "commit": "efce34d09e37e318e9d2bb55d4687f6ff129f965",
+          "commit": "fc00006bc2e6c88ffc3b2827e9a1bc04eaee08a1",
           "name": "maryland-dsd/law-xml-codified"
         }
       ],
